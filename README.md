@@ -7,7 +7,7 @@ Exploratory Visualization of the dataset
 
 The training and test sets are provided as a form of pickle data.
 
-Pickle  “serialises” the object first before writing it to file. Pickling is a way to convert a python object (list, <b>dict<b>, etc. ) into a character stream. This character stream contains all the information necessary to reconstruct the object.
+Pickle  “serialises” the object first before writing it to file. Pickling is a way to convert a python object (list, <b>dict</b>, etc. ) into a character stream. This character stream contains all the information necessary to reconstruct the object.
 
 
 <pre>
