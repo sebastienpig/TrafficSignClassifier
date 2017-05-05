@@ -33,6 +33,10 @@ X_test, y_test = test['features'], test['labels']
 - `'coords'` is a list containing tuples, (x1, y1, x2, y2) representing coordinates of a bounding box around the sign in the image.
 
 
+The data are in the directory <b>traffic-signs-data</b> with:
+<li> <b>train.p</b> a serialised file of 120.7MB </li>
+<li> <b>test.p</b> a serialised file of 38.9 MB  </li>
+(file not uploaded becasue going over file size limit on GitHub)
 
 
 
