@@ -39,6 +39,27 @@ The data are in the directory <b>traffic-signs-data</b> with:
 (file not uploaded becasue going over file size limit on GitHub)
 
 
+Description of the data:
+
+<li>Number of training examples = 39209 </li>
+<li>Number of testing examples = 12630 </li>
+<li>Image data shape = (32, 32, 3) </li>
+<li>Number of classes = 43 </li> using a unique collection of items is to use a <b>set</b>
+
+
+The training set is explored by 
+<pre>
+# Visualizing randomly 16 images from the training set
+print (" TRAINING SET")
+for i in range(16):
+    plt.subplot(4,4,i+1)
+    plt.imshow(X_train[random.randint(0,n_train)])
+plt.show()
+</pre>
+
+<img src="assets/train_signs.png">
+
+
 
 <pre>
 Network parameters
