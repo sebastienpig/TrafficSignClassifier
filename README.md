@@ -66,7 +66,7 @@ plt.hist(y_train, n_classes, color='green')
 </pre>
 
 <img src="assets/distribution.png">
-
+distribution.png
 
 ### Design and Test a Model Architecture
 
