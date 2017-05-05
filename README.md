@@ -57,8 +57,18 @@ for i in range(16):
 plt.show()
 </pre>
 
-<img src="assets/train_signs.png">
 
+The distribution of the classes is obtained with:
+<pre>
+plt.hist(y_train, n_classes, color='green')
+</pre>
+
+<img src="assets/distribution.png">
+
+
+### Design and Test a Model Architecture
+
+The chosen architecture follows LeNET paper:
 
 
 <pre>
