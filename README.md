@@ -57,6 +57,8 @@ for i in range(16):
 plt.show()
 </pre>
 
+<img src="assets/train_signs.png">
+
 
 The distribution of the classes is obtained with:
 <pre>
