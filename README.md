@@ -65,13 +65,25 @@ The distribution of the classes is obtained with:
 plt.hist(y_train, n_classes, color='green')
 </pre>
 
-<img src="assets/distribution.png">
-distribution.png
+<img src="assets/distribution.jpg">
 
 ### Design and Test a Model Architecture
 
+
+#### Preprocessing
+
+<b> Normalize the data </b>
+
+
+
+#### LeNet ARCHITECTURE 
+
 The chosen architecture follows LeNET paper:
 
+INPUT -> CONV -> ACT -> POOL -> CONV -> ACT -> POOL -> FLATTEN -> FC -> ACT -> FC
+LeNET architecture accepts only 32x32xC images, here is in the good format, no padding needed
+
+<img src="assets/LeNet.jpg">
 
 <pre>
 Network parameters
