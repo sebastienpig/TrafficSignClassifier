@@ -75,7 +75,24 @@ plt.hist(y_train, n_classes, color='green')
 <b> Normalize the data </b>
 
 
+Preprocess the data here. Preprocessing steps could include normalization, converting to grayscale, etc.
+NORMALIZATION OF DATA: colors on a 0-255 scale => 0-1 scale
+Follows the equation normalized = (x - min( x )) / (max ( x )- min( x ))
 
+
+<b> shufling the data </b>
+
+<pre>
+      
+#shuffling the Data
+X_train_norm, y_train = shuffle(X_train_norm, y_train)
+print("DATA SHUFFLED --")
+
+# SPLITTING THE DATA using 20% to create the validation set
+X_train_norm, X_val, y_train, y_val = train_test_split(X_train_norm, y_train, test_size=0.2, random_state=42)
+print ("DATA SPLIT --")
+
+</pre>
 #### LeNet ARCHITECTURE 
 
 The chosen architecture follows LeNET paper:
