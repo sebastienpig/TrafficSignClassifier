@@ -72,23 +72,23 @@ for i in range(16):
 plt.show()
 </pre>
 
-VISUALIZING TRAINING SET
-index 6 is End of speed limit (80km/h)
-index 13 is Yield
-index 13 is Yield
-index 9 is No passing
-index 13 is Yield
-index 5 is Speed limit (80km/h)
-index 33 is Turn right ahead
-index 25 is Road work
-index 35 is Ahead only
-index 37 is Go straight or left
-index 7 is Speed limit (100km/h)
-index 34 is Turn left ahead
-index 3 is Speed limit (60km/h)
-index 28 is Children crossing
-index 2 is Speed limit (50km/h)
-index 10 is No passing for vehicles over 3.5 metric tons
+VISUALIZING TRAINING SET<br>
+<li>index 6 is End of speed limit (80km/h)</li>
+<li>index 13 is Yield</li>
+<li>index 13 is Yield</li>
+<li>index 9 is No passing</li>
+<li>index 13 is Yield</li>
+<li>index 5 is Speed limit (80km/h)</li>
+<li>index 33 is Turn right ahead</li>
+<li>index 25 is Road work</li>
+<li>index 35 is Ahead only</li>
+<li>index 37 is Go straight or left</li>
+<li>index 7 is Speed limit (100km/h)</li>
+<li>index 34 is Turn left ahead</li>
+<li>index 3 is Speed limit (60km/h)</li>
+<li>index 28 is Children crossing</li>
+<li>index 2 is Speed limit (50km/h)</li>
+<li>index 10 is No passing for vehicles over 3.5 metric tons</li>
 
 <img src="assets/train_signs_2x8.png">
 
