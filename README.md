@@ -88,7 +88,7 @@ VISUALIZING TRAINING SET<br>
 <li>index 3 is Speed limit (60km/h)</li>
 <li>index 28 is Children crossing</li>
 <li>index 2 is Speed limit (50km/h)</li>
-<li>index 10 is No passing for vehicles over 3.5 metric tons</li>
+<li>index 10 is No passing for vehicles over 3.5 metric tons</li><br><br>
 
 <img src="assets/train_signs_2x8.png">
 
