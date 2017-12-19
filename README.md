@@ -3,7 +3,7 @@
 
 ####  Summary of the data set.
 
-Step 0 : Load the DATA
+<h2> Step 0 : Load the DATA</h2>
 
 I created a dictionary <b> sign_dictionary </b> to recognize the signs faster rather than lookingup their class number, it reflects the signnames.csv
 
