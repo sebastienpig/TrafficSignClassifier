@@ -60,7 +60,7 @@ Description of the data:
 <li>Number of classes = 43 </li> using a unique collection of items is to use a <b>set</b>
 
 <b> We have a total of 39209+12630 = 51839 examples.
-Training data is 75% and test set is 25% </b>
+Training data is 75% and test set is 25% which is a good mix for a classification.</b>
 
 The training set is explored by showing a plot of 2 lines and 8 images per line:
 <pre>
