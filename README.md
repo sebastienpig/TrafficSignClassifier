@@ -37,6 +37,7 @@ print (" Size of X_test is %d labels is %d" %(len(X_test), len(y_test)))
 print (" X_test Labels are", test['labels'])
 </pre>
 
+<h2> Step 1: Dataset Summary & Exploration </h2>
 #### The pickled data is a dictionary with 4 key/value pairs:
 
 - `'features'` is a 4D array containing raw pixel data of the traffic sign images, (num examples, width, height, channels).
@@ -58,11 +59,13 @@ Description of the data:
 <li>Image data shape = (32, 32, 3) </li>
 <li>Number of classes = 43 </li> using a unique collection of items is to use a <b>set</b>
 
+<b> We have a total of 39209+12630 = 51839 examples.
+Training data is 75% and test set is 25% </b>
 
-The training set is explored by 
+The training set is explored by showing a plot of 2 lines and 8 images per line:
 <pre>
 # Visualizing randomly 16 images from the training set
-print (" TRAINING SET")
+print (" TRAINING SET EXCERPT")
 for i in range(16):
     plt.subplot(4,4,i+1)
     plt.imshow(X_train[random.randint(0,n_train)])
