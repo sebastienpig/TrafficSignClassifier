@@ -3,6 +3,10 @@
 
 ####  Summary of the data set.
 
+Step 0 : Load the DATA
+
+I created a dictionary <b> sign_dictionary </b> to recognize the signs faster rather than lookingup their class number, it reflects the signnames.csv
+
 Exploratory Visualization of the dataset
 
 The training and test sets are provided as a form of pickle data.
@@ -24,6 +28,14 @@ X_train, y_train = train['features'], train['labels']
 X_test, y_test = test['features'], test['labels']
 
 </pre># SignClassification
+
+I doubled checked that I have as many labels as data:
+<pre>
+print (" Size of X_train is %d labels is %d" %(len(X_train), len(y_train)))
+print (" X_train Labels are", train['labels'])
+print (" Size of X_test is %d labels is %d" %(len(X_test), len(y_test)))
+print (" X_test Labels are", test['labels'])
+</pre>
 
 #### The pickled data is a dictionary with 4 key/value pairs:
 
