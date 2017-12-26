@@ -164,7 +164,8 @@ raiseException("Unknown padding.")
 
 <h2> PREPROCESSING the data </h2>
 <b>NORMALIZATION OF DATA so that the data has mean zero and equal variance in intensity:</b>
-<br>colors on a 0-255 scale => 0-1 scale
+<br>colors on a 0-255 scale => 0-1 scale <br>
+<br>Follows the equation normalized = (x - min( x )) / (max ( x )- min( x ))<br>
 
 
 <h2> ADDING IMAGES IN CLASSES WITH VERY FEW INSTANCES </h2>
@@ -176,8 +177,7 @@ For instance the class 0 has only 180 images; I listed the indexes of this class
 It is possible to increase the number iof images by applying affine transformations liek rotations.
 I applied random rotations on 14 images and concatenated them to the trainign data (before splitting this set to obtain the validation data).
 
-<b> Should also be done: <b> a proportional number of augmented images should be added in the test set to keep a 25% or 33% ratio.
-<br>Follows the equation normalized = (x - min( x )) / (max ( x )- min( x ))
+<b> Should also be done: </b> a proportional number of augmented images should be added in the test set to keep a 25% or 33% ratio.<br>
 
 
 <h2> TRAINING DATA , VALIDATION DATA TESTING DATA <h2>
