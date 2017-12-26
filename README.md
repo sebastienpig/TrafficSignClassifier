@@ -189,11 +189,13 @@ I chose a subset of 20% of the trainign data to represent the validation data fo
 
 <h2> LeNet Archi hyper parameters </h2>
 
-The following parameters gave the best compromise accuracy and speed
-Choosing EPOCH =12
-BATCH_SIZE 256
-rate = 0.001
+The following parameters gave the best compromise accuracy and speed ( results obtained in 7 minutes on a PC Intel i5-4590 @ 3.30GHza and 16GB of RAM)
 
+Choosing EPOCH =12<br>
+BATCH_SIZE 256<br>
+rate = 0.001<br>
+
+<pre>
 Training...
 
 EPOCH 1 : Accuracy on validation data = 0.219
@@ -220,6 +222,8 @@ EPOCH 11 : Accuracy on validation data = 0.922
 time from start: 391.457
 EPOCH 12 : Accuracy on validation data = 0.933
 time from start: 425.398
+</pre>
+
 <b> Validation Set showed a 93.3% accuracy </b><br>
 <b> Test Set showed a 85.3% accuracy </b><br>
 
