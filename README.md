@@ -179,3 +179,47 @@ I applied random rotations on 14 images and concatenated them to the trainign da
 <b> Should also be done: <b> a proportional number of augmented images should be added in the test set to keep a 25% or 33% ratio.
 <br>Follows the equation normalized = (x - min( x )) / (max ( x )- min( x ))
 
+
+<h2> TRAINING DATA , VALIDATION DATA TESTING DATA <h2>
+
+# SPLITTING THE DATA using 20% to create the validation set
+X_train_norm, X_val, y_train, y_val = train_test_split(X_train_norm, y_train, test_size=0.2, random_state=42)
+
+I chose a subset of 20% of the trainign data to represent the validation data for which we must reach at least 93% accuracy.
+
+<h2> LeNet Archi hyper parameters </h2>
+
+The following parameters gave the best compromise accuracy and speed
+Choosing EPOCH =12
+BATCH_SIZE 256
+rate = 0.001
+
+Training...
+
+EPOCH 1 : Accuracy on validation data = 0.219
+time from start: 34.302
+EPOCH 2 : Accuracy on validation data = 0.451
+time from start: 68.134
+EPOCH 3 : Accuracy on validation data = 0.545
+time from start: 101.895
+EPOCH 4 : Accuracy on validation data = 0.749
+time from start: 138.296
+EPOCH 5 : Accuracy on validation data = 0.793
+time from start: 173.591
+EPOCH 6 : Accuracy on validation data = 0.804
+time from start: 208.587
+EPOCH 7 : Accuracy on validation data = 0.871
+time from start: 244.013
+EPOCH 8 : Accuracy on validation data = 0.867
+time from start: 282.842
+EPOCH 9 : Accuracy on validation data = 0.864
+time from start: 319.547
+EPOCH 10 : Accuracy on validation data = 0.870
+time from start: 354.816
+EPOCH 11 : Accuracy on validation data = 0.922
+time from start: 391.457
+EPOCH 12 : Accuracy on validation data = 0.933
+time from start: 425.398
+<b> Validation Set showed a 93.3% accuracy </b><br>
+<b> Test Set showed a 85.3% accuracy </b><br>
+
