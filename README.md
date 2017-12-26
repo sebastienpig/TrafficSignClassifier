@@ -90,7 +90,7 @@ VISUALIZING TRAINING SET<br>
 <li>index 2 is Speed limit (50km/h)</li>
 <li>index 10 is No passing for vehicles over 3.5 metric tons</li><br><br>
 
-<img src="assets/train_signs_2x8.png">
+<img src="Notes/train_signs_2x8.jpg">
 
 
 The distribution of the classes is obtained with:
@@ -98,7 +98,7 @@ The distribution of the classes is obtained with:
 plt.hist(y_train, n_classes, color='green')
 </pre>
 
-<img src="assets/distribution.jpg">
+<img src="Notes/distribution.jpg">
 
 ### Design and Test a Model Architecture
 
@@ -133,7 +133,7 @@ The chosen architecture follows LeNET paper:
 INPUT -> CONV -> ACT -> POOL -> CONV -> ACT -> POOL -> FLATTEN -> FC -> ACT -> FC
 LeNET architecture accepts only 32x32xC images, here is in the good format, no padding needed
 
-<img src="assets/LeNet.jpg">
+<img src="Notes/LeNet.jpg">
 
 <pre>
 Network parameters
