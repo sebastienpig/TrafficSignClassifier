@@ -227,3 +227,69 @@ time from start: 425.398
 <b> Validation Set showed a 93.3% accuracy </b><br>
 <b> Test Set showed a 85.3% accuracy </b><br>
 
+
+<h2> Validation on images extracted from Internet </h2>
+
+I uploaded in the directory assets/ 5 images, each image has the name of the class number 12.jpg, 18.jpg, 22.jpg, 38.jpg, 40.jpg <br>
+
+I reloaded the model and submitted the vector of images to get the following results:
+
+<pre>
+INFO:tensorflow:Restoring parameters from ./lenet
+Model restaured successfully
+Expected label 12 - Prediction: 12
+Expected label 18 - Prediction: 26
+Expected label 22 - Prediction: 17
+Expected label 38 - Prediction: 38
+Expected label 40 - Prediction: 40
+Test Set Accuracy = 0.600
+</pre>
+
+The Top 5 softmax probabilities obtained are:
+
+<pre>
+Image test is Priority road:
+
+Priority road: 99.96440410614014
+Speed limit (70km/h): 0.019403475744184107
+No entry: 0.013063951337244362
+Traffic signals: 0.0031365267204819247
+Speed limit (30km/h): 8.850940119708994e-09
+
+Image test is General caution:
+
+Traffic signals: 100.0
+General caution: 3.5200559134196396e-08
+Children crossing: 2.0678940504392784e-08
+Beware of ice/snow: 1.8212848763854428e-10
+Bumpy road: 1.430857710961464e-10
+
+Image test is Bumpy road:
+
+No entry: 98.10700416564941
+Speed limit (30km/h): 1.519086305052042
+End of speed limit (80km/h): 0.33944568131119013
+Beware of ice/snow: 0.02565415925346315
+Children crossing: 0.007559994992334396
+
+Image test is Keep right:
+
+Keep right: 100.0
+Yield: 1.277249746939324e-09
+Go straight or right: 6.878460474812886e-12
+Turn left ahead: 2.704504838057175e-13
+Roundabout mandatory: 1.8990632202163103e-14
+
+Image test is Roundabout mandatory:
+
+Roundabout mandatory: 100.0
+Turn right ahead: 1.3727263683399604e-10
+Keep right: 4.5225162590561974e-11
+Keep left: 1.162860298945499e-13
+Go straight or left: 4.7074041332114953e-14
+</pre>
+
+It is interested to see that apart from the General Caution the model mistook the image for a traffic signal. However General Caution was still in the mix for selection. 
+The image I found were pretty clean so no surprise that Keep right got a good results.
+
+Interesting to see that Priority Road got recognized, the imaged is a little warped and has some blue background color, same for roundabout-mandatory. The CNN worked perfectly in those examples. 
