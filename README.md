@@ -108,7 +108,7 @@ plt.hist(y_train, n_classes, color='green')
 <b> Normalize the data </b>
 
 
-Preprocess the data here. Preprocessing steps could include normalization, converting to grayscale, etc.
+Normalization helps the algorithm performing more quickly.
 NORMALIZATION OF DATA: colors on a 0-255 scale => 0-1 scale
 Follows the equation normalized = (x - min( x )) / (max ( x )- min( x ))
 
@@ -161,3 +161,21 @@ conv_output_length = 5
 else:
 raiseException("Unknown padding.")
 </pre>
+
+<h2> PREPROCESSING the data </h2>
+<b>NORMALIZATION OF DATA so that the data has mean zero and equal variance in intensity:</b>
+<br>colors on a 0-255 scale => 0-1 scale
+
+
+<h2> ADDING IMAGES IN CLASSES WITH VERY FEW INSTANCES </h2>
+
+From the histogram it can be noted that not all classes have the same number of images, some classes are underepresented which can introduce a bias towrads a better recognition for some sign more than for others.
+
+For instance the class 0 has only 180 images; I listed the indexes of this class.
+
+It is possible to increase the number iof images by applying affine transformations liek rotations.
+I applied random rotations on 14 images and concatenated them to the trainign data (before splitting this set to obtain the validation data).
+
+<b> Should also be done: <b> a proportional number of augmented images should be added in the test set to keep a 25% or 33% ratio.
+<br>Follows the equation normalized = (x - min( x )) / (max ( x )- min( x ))
+
