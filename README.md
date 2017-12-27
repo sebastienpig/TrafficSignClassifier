@@ -182,7 +182,7 @@ From the histogram it can be noted that not all classes have the same number of 
 
 For instance the class 0 has only 180 images; I listed the indexes of this class.
 
-It is possible to increase the number iof images by applying affine transformations liek rotations.
+It is possible to increase the number iof images by applying affine transformations (definition: sets of parallel lines remain parallel after an affine transformation) like <b>rotations</b>.
 I applied random rotations on 14 images and concatenated them to the trainign data (before splitting this set to obtain the validation data).
 
 Check that the new images have been added correctly to the X_train:<br>
