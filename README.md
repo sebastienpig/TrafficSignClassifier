@@ -112,6 +112,8 @@ Normalization helps the algorithm performing more quickly.
 NORMALIZATION OF DATA: colors on a 0-255 scale => 0-1 scale
 Follows the equation normalized = (x - min( x )) / (max ( x )- min( x ))
 
+Normalizing the data has helped reaching the 93% accuracy, otherwise the first epoch starts at 5% accuracy and has difficulty to converge.
+
 
 <b> shufling the data </b>
 
