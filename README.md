@@ -179,12 +179,18 @@ For instance the class 0 has only 180 images; I listed the indexes of this class
 It is possible to increase the number iof images by applying affine transformations liek rotations.
 I applied random rotations on 14 images and concatenated them to the trainign data (before splitting this set to obtain the validation data).
 
+Check that the new images have been added correctly to the X_train:<br>
+<pre>
+ New size of the training data 34813 versus 34799 before
+</pre>
+
 <b> Should also be done: </b> a proportional number of augmented images should be added in the test set to keep a 25% or 33% ratio.<br>
 
 
-<h2> TRAINING DATA , VALIDATION DATA TESTING DATA <h2>
+<h3> TRAINING DATA , VALIDATION DATA TESTING DATA <h3>
 
-# SPLITTING THE DATA using 20% to create the validation set
+<b> SPLITTING THE DATA using 20% to create the validation set</b>
+The validation set is defined before shuffling
 X_train_norm, X_val, y_train, y_val = train_test_split(X_train_norm, y_train, test_size=0.2, random_state=42)
 
 I chose a subset of 20% of the trainign data to represent the validation data for which we must reach at least 93% accuracy.
@@ -200,34 +206,35 @@ rate = 0.001<br>
 <pre>
 Training...
 
-EPOCH 1 : Accuracy on validation data = 0.219
-time from start: 34.302
-EPOCH 2 : Accuracy on validation data = 0.451
-time from start: 68.134
-EPOCH 3 : Accuracy on validation data = 0.545
-time from start: 101.895
-EPOCH 4 : Accuracy on validation data = 0.749
-time from start: 138.296
-EPOCH 5 : Accuracy on validation data = 0.793
-time from start: 173.591
-EPOCH 6 : Accuracy on validation data = 0.804
-time from start: 208.587
-EPOCH 7 : Accuracy on validation data = 0.871
-time from start: 244.013
-EPOCH 8 : Accuracy on validation data = 0.867
-time from start: 282.842
-EPOCH 9 : Accuracy on validation data = 0.864
-time from start: 319.547
-EPOCH 10 : Accuracy on validation data = 0.870
-time from start: 354.816
-EPOCH 11 : Accuracy on validation data = 0.922
-time from start: 391.457
-EPOCH 12 : Accuracy on validation data = 0.933
-time from start: 425.398
+EPOCH 1 : Accuracy on validation data = 0.359
+time from start: 40.207
+EPOCH 2 : Accuracy on validation data = 0.634
+time from start: 78.786
+EPOCH 3 : Accuracy on validation data = 0.569
+time from start: 115.957
+EPOCH 4 : Accuracy on validation data = 0.828
+time from start: 153.230
+EPOCH 5 : Accuracy on validation data = 0.820
+time from start: 190.558
+EPOCH 6 : Accuracy on validation data = 0.864
+time from start: 233.321
+EPOCH 7 : Accuracy on validation data = 0.916
+time from start: 275.232
+EPOCH 8 : Accuracy on validation data = 0.855
+time from start: 312.752
+EPOCH 9 : Accuracy on validation data = 0.887
+time from start: 351.308
+EPOCH 10 : Accuracy on validation data = 0.928
+time from start: 388.755
+EPOCH 11 : Accuracy on validation data = 0.921
+time from start: 426.550
+EPOCH 12 : Accuracy on validation data = 0.932
+time from start: 464.664
+Model saved
 </pre>
 
-<b> Validation Set showed a 93.3% accuracy </b><br>
-<b> Test Set showed a 85.3% accuracy </b><br>
+<b> Validation Set showed a 93.2% accuracy </b><br>
+<b> Test Set showed a 85.1% accuracy </b><br>
 
 
 <h2> Validation on images extracted from Internet </h2>
