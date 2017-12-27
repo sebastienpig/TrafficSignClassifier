@@ -135,10 +135,16 @@ The chosen architecture follows LeNET paper:
 INPUT -> CONV -> ACT -> POOL -> CONV -> ACT -> POOL -> FLATTEN -> FC -> ACT -> FC
 LeNET architecture accepts only 32x32xC images, here is in the good format, no padding needed
 
+EPOCH = 12 with rate of 0.001  was enough to converge in 7 minutes and reach above 93%!!
+
 <img src="Notes/LeNet.jpg">
 
+<img src="Notes/CNN.jpg">
+
 <pre>
+
 Network parameters
+dropout = 80%
 n_input = 32 * 32 * 3
 nb_filters = 32
 kernel_size = (3, 3)
@@ -199,9 +205,11 @@ I chose a subset of 20% of the trainign data to represent the validation data fo
 
 The following parameters gave the best compromise accuracy and speed ( results obtained in 7 minutes on a PC Intel i5-4590 @ 3.30GHza and 16GB of RAM)
 
+<b>
 Choosing EPOCH =12<br>
 BATCH_SIZE 256<br>
 rate = 0.001<br>
+</b>
 
 <pre>
 Training...
@@ -237,6 +245,11 @@ Model saved
 
 <b> Validation Set showed a 93.2% accuracy </b><br>
 <b> Test Set showed a 85.1% accuracy </b><br>
+
+
+I tried several combinations less successfully:
+EPOCH =10, rate =0.005 = >Validation of 87.5%<br>
+
 
 
 <h2> Validation on images extracted from Internet </h2>
