@@ -233,6 +233,8 @@ time from start: 464.664
 Model saved
 </pre>
 
+<img src="Notes/accuracy.jpg">
+
 <b> Validation Set showed a 93.2% accuracy </b><br>
 <b> Test Set showed a 85.1% accuracy </b><br>
 
